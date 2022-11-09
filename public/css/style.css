@@ -1,0 +1,571 @@
+@charset "utf-8";
+
+.hidden-print {
+    display: none !important;
+}
+
+html {}
+
+body {}
+
+.imglist {
+    width: 80px;
+    padding: 0 15px;
+}
+
+/*MyProfil*/
+#MyProfilItem {}
+
+.plofile_edit {
+    color: #fff;
+    background: red;
+}
+
+/*login*/
+.login_name {
+    color: aliceblue;
+}
+
+.login_menu {
+    color: aliceblue;
+}
+
+.login_icon {
+    width: 50px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.user_icon {
+    width: 30px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loginstile {
+    background-color: #ccd8ff;
+    padding: 50px 0;
+}
+
+.loginbox {
+    width: 100px;
+    height: 100px;
+    background-color: #4773ff;
+    margin: 0 auto;
+}
+
+/* header */
+header.loginhome {
+
+    height: 100vh;
+    background-color: #186AC9;
+    background-image: linear-gradient(0deg, #ddf126 0%, #186AC9 50%);
+}
+
+header {
+    display: flex;
+    background: #186AC9;
+}
+
+h1.logintitle {
+    padding: 100px 45%;
+}
+
+/*全般*/
+.font_set {
+    font-size: 30px;
+    vertical-align: 20px;
+}
+
+/*menu*/
+li.menu_btn {
+    display: block;
+    width: 80px;
+    padding: 15px 0;
+    margin: auto;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+.drawer-list {
+    display: none;
+    font-size: 15px;
+}
+
+/*login.blade.php*/
+a.follow_list {
+    display: block;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0004eb;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    font-size: 250%;
+    line-height: 70px;
+    position: relative;
+    right: -40%;
+    letter-spacing: 0.1px;
+}
+
+a.follower_list {
+    display: block;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0004eb;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    font-size: 230%;
+    line-height: 70px;
+    position: relative;
+    right: -40%;
+    letter-spacing: 0.01px;
+}
+
+a.search_btn {
+    display: block;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0004eb;
+    position: relative;
+    top: 30px;
+    left: 30%;
+    width: 55%;
+    height: auto;
+    text-align: center;
+    font-size: 90%;
+    line-height: 70px;
+}
+
+p.sideber {
+    margin-bottom: 15px;
+    position: relative;
+    left: 20px;
+    font-size: 5px;
+}
+
+div.search_zone {
+    border-top: 1px solid #c0c0c0;
+}
+
+p.sidetop {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.atlastitle {
+
+    margin: 45px auto;
+    margin-left: 50px;
+}
+
+.login_name {
+    font-size: 150%;
+}
+
+div#side-bar {
+    flex: 0 0 19%;
+    margin-right: auto;
+    border-left: 1px solid #727272;
+}
+
+#head {
+    width: 100%;
+}
+
+#MyProfil {
+    display: flex;
+
+    margin: 45px auto;
+    float: right;
+}
+
+#toggle {
+    display: none;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+
+}
+
+#toggle:checked+#menu {
+    display: block;
+    z-index: 100;
+}
+
+.login_name {
+    order: 1;
+}
+
+.login_icon {
+    order: 3;
+}
+
+.login_menu {
+    order: 2;
+}
+
+/*index.blade.php*/
+div.post_space {
+    border-bottom: 10px solid #c0c0c0;
+
+}
+
+div#container {
+    width: 500px;
+    height: 200px;
+    background-color: #4773ff;
+    margin: 0 auto;
+}
+
+.post_btn {
+    position: relative;
+    left: 80%;
+}
+
+.edit_btn {
+    margin-left: 90%;
+}
+
+.delete_img {}
+
+.update_img {}
+
+/*ボタン・フォーム関連*/
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.posts {
+    border: none;
+    outline: none;
+    width: 400px;
+    font-size: 25px;
+}
+
+li {
+    list-style: none;
+    border-bottom: 1px solid #000;
+    display: flex;
+}
+
+.post-content {
+    width: 100%;
+    padding: 15px;
+}
+
+.post-content>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-name {
+    margin-bottom: 10px;
+}
+
+.edit {
+    margin-right: auto;
+}
+
+
+
+.title {
+    margin: 0 auto;
+}
+
+.logintitle {
+    width: 200px;
+    height: auto;
+}
+
+.loginsubtitle {
+
+    width: 200px;
+    padding: 0 50%;
+}
+
+.atlastitle {
+    width: 150px;
+    height: auto;
+
+}
+
+.cleate {
+    width: 30px;
+    height: auto;
+}
+
+.create_time {
+    float: right;
+}
+
+a {
+    width: 30px;
+    height: 30px;
+
+}
+
+h4 {
+    text-align: right;
+}
+
+
+
+/*post*/
+.post_img {
+    width: 70px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: right;
+}
+
+/* update/delete */
+.update_img {
+    width: 30px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.delete_img {
+    width: 30px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* main content */
+#list {
+    width: 79%;
+}
+
+#row {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+#container {
+    flex: 0 0 70%;
+}
+
+
+
+/*followbotton*/
+.btn--orange,
+a.btn--orange {
+    color: #fff;
+    background-color: #0004eb;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+    color: #fff;
+    background: #797bd3;
+}
+
+/*プロフィール編集*/
+div.card {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/*search.blade.php*/
+img.search_img {
+    margin: 30px;
+    width: 20px;
+    height: auto;
+}
+
+td {
+    padding: 20px;
+}
+
+button.lift {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 50px;
+    vertical-align: 20px;
+}
+
+button.register {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 50px;
+    vertical-align: 20px;
+}
+
+
+table.user_table {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inline {
+    border-bottom: 10px solid #c0c0c0;
+}
+
+/*フォローボタン*/
+
+.user_img {
+    width: 60px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.userid {
+    color: crimson;
+}
+
+.lift {
+    background-color: red;
+}
+
+.register {
+    background-color: #0004eb;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal__bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.modal__content {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+/*follower.blade.php*/
+.list_box {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+}
+
+/*プロフィール更新*/
+.edit_form {
+    width: 300%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit_box {
+    width: 10%;
+    margin: 0 auto;
+    display: flex;
+}
+
+input[type="text"] {
+    width: 70%;
+    margin-left: auto;
+    height: 50px;
+}
+
+input[type="password"] {
+    width: 70%;
+    margin-left: auto;
+    height: 50px;
+}
+
+.edit_file {
+    position: relative;
+    float: right;
+    margin-left: 60%;
+}
+
+.edit_div {
+    width: 200%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.edit_btn {
+    text-align: center;
+}
+
+/*他ユーザーのプロフィール*/
+.profile_date {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.profile_zoon {
+    border-bottom: 10px solid #c0c0c0;
+    width: 100%;
+    display: flex;
+}
+
+.profile_follow {
+    margin-left: 50%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.profile_text {
+    margin-right: 200%;
+    font-size: 150%;
+}
+
+.profile_post {
+    border-bottom: 1px solid black;
+    width: max-content;
+}
+
+.profile_table {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.profile_lift {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 120%;
+    padding: 20px 20px;
+    vertical-align: 20px;
+    background-color: red;
+}
+
+.profile_register {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20%;
+    padding: 20px 20px;
+    vertical-align: 20px;
+    background-color: red;
+}
