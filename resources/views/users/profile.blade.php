@@ -11,11 +11,11 @@
       <div>
         <div  class = "profile_date">
           <p class="profile_text">name</p>
-          <div>{{$userdate->username}}</div>
+          <div class="profile_date_name">{{$userdate->username}}</div>
         </div>
         <div  class = "profile_date">
           <p class="profile_text">bio</p>
-          <div>{{$userdate->bio}}</div>
+          <div class="profile_date_name">{{$userdate->bio}}</div>
         </div>
       </div>
       <div class="profile_follow">
@@ -42,20 +42,25 @@
     </div>
     @endforeach
 
-    <table class="profile_table">
+    <div class="">
     @foreach($userpost as $userpost)
-      <tr class="profile_post">
-        <td>
-          <img src="{{asset('storage/images/'.$userdate->images)}}">
-        </td>
-        <td>
-          <div>{{$userdate->username}}</div>
-          <div>{{$userpost->post}}</div>
-        </td>
-        <td>{{$userpost->created_at}}</td>
-      </tr>
+      <div>
+        <ul>
+          <li class="post-block">
+            <figure class="img_margin"><img src="{{asset('storage/images/'.$userdate->images)}}"></figure>
+            <div class="post-content">
+              <div>
+                <div class="post-name">{{$userdate->username}}</div>
+                <div>{{$userpost->created_at}}</div>
+              </div>
+              <div>{{$userpost->created_at}}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
     @endforeach
-    </table>
+    </div>
+
   </div>
 
 </body>

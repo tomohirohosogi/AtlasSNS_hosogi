@@ -12,25 +12,30 @@
     @endforeach
   </div>
   @foreach ($users as $user)
+  <div class='follower_tb'>
+      <ul>
+        <li class="follow-block">
+          <figure>
+            <img src="{{ asset('storage/images/'.$user->images)}}"alt="{{ $user->images}}" class="user_img">
+          </figure>
 
-    <div>
-      <table class='table table-hover'>
-        <li class="post-block">
-          <td>
-            <img src="{{ asset('storage/images/'.$user->images)}}"alt="{{ $user->images}}" class="user_img"width="10" height="auto">
-          </td>
-          <td class="post-name">
-            {{ $user->username }}
-          </td>
-          <td class = "user_post">
-            {{ $user->post}}
-          </td>
-          <td class = "post_at">
-            {{$user->created_at}}
-          </td>
+          <div class="foiiow-content">
+            <div class="user_box">
+              <div class="user_name">{{ $user->username }}</div>
+              <div class="post_at">{{$user->created_at}}</div>
+            </div>
+            <div class = "user_post">
+              {{ $user->post}}
+            </div>
+          </div>
+
+
+
+
         </li>
-      </table>
-    </div>
+      </ul>
+  </div>
+
   @endforeach
 </body>
 @endsection

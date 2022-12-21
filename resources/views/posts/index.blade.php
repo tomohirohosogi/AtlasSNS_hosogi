@@ -53,6 +53,7 @@
 
 
             @endif
+          </div>
         </li>
       </ul>
     </div>
@@ -64,10 +65,14 @@
         <form action="{{route('posts.edit')}}" method="post">
           <textarea name="repost" class="modal_post"></textarea>
           <input type="hidden" name="post_id" class="modal_id" value="">
-          <input type="submit" value="更新">
+          <div class="modal_edit">
+            <input type="image" value="" src="images/edit.png" alt="更新" class="modal_edit_img">
+          </div>
+
+
           @csrf
         </form>
-      <a class="js-modal-close" href="">閉じる</a>
+
     </div>
   </div>
 

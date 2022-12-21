@@ -39,6 +39,10 @@ h1 {
     padding: 30px 0;
 }
 
+.new_register {
+    margin-top: 40px;
+}
+
 p .register {
     text-decoration: none;
     color: #fff;
@@ -132,4 +136,9 @@ p.added_p {
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
+}
+
+/*バリデーションエラー*/
+.error {
+    color: red;
 }

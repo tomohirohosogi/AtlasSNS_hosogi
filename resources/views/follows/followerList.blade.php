@@ -12,23 +12,28 @@
     @endforeach
   </div>
   @foreach ($users as $user)
-  <div class="">
-      <table class='table table-hover'>
-        <li>
-          <td >
+  <div class='follower_tb'>
+      <ul>
+        <li class="follow-block">
+          <figure>
             <img src="{{ asset('storage/images/'.$user->images)}}"alt="{{ $user->images}}" class="user_img">
-          </td>
-          <td class = "user_name">
-          {{ $user->username }}
-          </td>
-          <td class = "user_post">
-          {{ $user->post}}
-          </td>
-          <td class = "post_at">
-            {{$user->created_at}}
-          </td>
+          </figure>
+
+          <div class="foiiow-content">
+            <div class="user_box">
+              <div class="user_name">{{ $user->username }}</div>
+              <div class="post_at">{{$user->created_at}}</div>
+            </div>
+            <div class = "user_post">
+              {{ $user->post}}
+            </div>
+          </div>
+
+
+
+
         </li>
-      </table>
+      </ul>
   </div>
   @endforeach
 </body>

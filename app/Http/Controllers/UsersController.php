@@ -94,7 +94,7 @@ class UsersController extends Controller
         $user ->bio = $input['bio'];
         $user->save();
 
-        return view('users.edit',compact('user'));
+        return redirect('/top');
 
 
     }

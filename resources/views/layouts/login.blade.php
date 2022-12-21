@@ -27,15 +27,15 @@
                 <div  id="MyProfilItem">
                     <p class="login_name"><?php $user = Auth::user(); ?>{{ $user->username }}さん</p>
                 </div>
+
+                <div>
+                    <div href="#" class="drawer"></div>
+
+                </div>
+
                 <div id="MyProfilItem">
                   <a><img class="login_icon" src="{{ asset('storage/images/'.$user->images)}}" alt="サンプル" width="10" height="auto" ></a>
                 </div>
-
-                <div>
-                    <a href="#" class="drawer">menu</a>
-
-                </div>
-
 
                 <!-- <div id="MyProfilItem">
                     <div class="login_menu">
@@ -70,17 +70,21 @@
         <div id="side-bar">
             <ul class="drawer-list">
                         <li class="menu_btn">
-                            <a class="home_btn" href="/top" >ホーム</a>
+                            <a class="home_btn" href="/top" >HOME</a>
                         </li>
-                        <li class="menu_btn">
-                            <a class="dropdown-item" href="{{route('users.edit',$user)}}">
+                        <li id="dropdown-item" class="menu_btn">
+                            <a  href="{{route('users.edit',$user)}}">
                                 <span class="text-primary">プロフィール編集</span>
                             </a>
                         </li>
-                        <li><form action="{{route('logout')}}" methot="post" class="logout">
-                                @csrf
-                                <input type="submit" value="ログアウト">
-                                </form></li>
+                        <li class="menu_logout">
+                            <div>
+                                <form action="{{route('logout')}}" methot="post" class="logout">
+                                    @csrf
+                                    <input type="submit" value="ログアウト">
+                                </form>
+                            </div>
+                        </li>
                     </ul>
 
             <div id="confirm">

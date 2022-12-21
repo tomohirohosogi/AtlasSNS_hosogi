@@ -52,6 +52,7 @@ class RegisterController extends Controller
             'username' => 'required|string|max:255',
             'mail' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:4|confirmed',
+            'password_confirmation'=>'alpha-num|between:8,20|same:password',
         ]);
     }
 
@@ -76,14 +77,22 @@ class RegisterController extends Controller
     // }
 
     public function register(Request $request){
-        if($request->isMethod('post')){
+
+        if($request->isMethod('post')){//ismethotについて調べる
             $data = $request->input();
             $name = $data['username'];
+            $validator=$this->validator($data);
+            //バリデーションがあっていなかったとき
+            if($validator->fails()){
+                return redirect('/register')
+              ->withErrors($validator)
+              ->withInput();
+            }
             $this->create($data);
             return view('auth.added',['name'=>$name]);
 
         }
-        return view('auth.register');
+        return view('/register');
     }
 
     public function added(){
