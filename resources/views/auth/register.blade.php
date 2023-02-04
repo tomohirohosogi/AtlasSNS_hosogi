@@ -39,7 +39,7 @@
 
 
     {{ Form::label('password comfirm') }}
-    {{ Form::password('password-confirm',null,['class' => 'input']) }}
+    {{ Form::password('password_confirmation',null,['class' => 'input']) }}
 
     {{ Form::submit('REGISTER') }}
 
